@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+This is the blog of Peter Jakobs.
+I work and Travian Games in Munich
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[My twitter account](https://twitter.com/patjako)
