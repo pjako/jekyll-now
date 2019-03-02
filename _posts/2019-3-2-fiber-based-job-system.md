@@ -121,12 +121,12 @@ void runJob() {
 
 	ktj_counterId jobsHandle = ktj_runJobs(ctx, jobs, 3);
 
-	ktj_waitForCounter(ctx, jhandle);
+	ktj_waitForCounter(ctx, jobsHandle);
 }
 ```
 When calling ktj_waitForCounter the fiber gets yield and will continue when all jobs are finished. In the current implementation this function has to be called, otherwise counter will not be freed.
 
 ## Future work
 The most obvious thing to do is to look at the remaining locks and try to exchange these with lockless implementations.
-Per thread job queues with job stealing would be an interesting experiment as well, also I have some ideas on how to make the sleeping job queue obsolet.
+Per thread job queues with job stealing would be an interesting experiment as well, also I have some ideas on how to make the sleeping job queue obsolete.
 First and formost I would like to actually use this libary in an project to see whats missing and where may be some common usecases which are not covered by the job system.
